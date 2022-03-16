@@ -8,7 +8,11 @@ const connection = mysql.createConnection(connectionString);
 connection.connect();
 
 app.get("/api/characters", (req: Request, res: Response) => {
-  res.send("It's alive!");
+  const query = "SELECT * FROM Characters";
+  connection.query(query, (err, rows) => {
+    if (err) throw err;
+    return res.send(rows);
+  });
 });
 
 app.get("/api/characters:id", (req: Request, res: Response) => {
