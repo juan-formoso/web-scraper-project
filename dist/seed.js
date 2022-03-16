@@ -41,12 +41,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = __importDefault(require("axios"));
 var cheerio_1 = __importDefault(require("cheerio"));
-var mysql_1 = __importDefault(require("mysql"));
-var dotenv_1 = __importDefault(require("dotenv"));
-dotenv_1.default.config();
-var connectionString = process.env.DATABASE_URL || "";
-var connection = mysql_1.default.createConnection(connectionString);
-connection.connect();
+var connection_1 = __importDefault(require("./middlewares/connection"));
 var characterNames = [
     "Abraxos",
     "Aedion_Ashryver",
@@ -202,7 +197,7 @@ var loadCharacters = function () { return __awaiter(void 0, void 0, void 0, func
                 ]; });
                 console.log(values);
                 sql = "INSERT INTO Characters (id, name, species, image) VALUES ?";
-                connection.query(sql, [values], function (err) {
+                connection_1.default.query(sql, [values], function (err) {
                     if (err) {
                         return console.error(err);
                     }

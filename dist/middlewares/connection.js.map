@@ -1,0 +1,1 @@
+{"version":3,"file":"connection.js","sourceRoot":"","sources":["../../src/middlewares/connection.ts"],"names":[],"mappings":";;;;;AAAA,kDAA4B;AAC5B,gDAA0B;AAE1B,gBAAM,CAAC,MAAM,EAAE,CAAC;AAEhB,IAAM,QAAQ,GAAG,OAAO,CAAC,GAAG,CAAC,YAAY,IAAI,EAAE,CAAC;AAChD,IAAM,UAAU,GAAG,eAAK,CAAC,gBAAgB,CAAC,QAAQ,CAAC,CAAC;AACpD,UAAU,CAAC,OAAO,EAAE,CAAC;AAErB,kBAAe,UAAU,CAAC"}
