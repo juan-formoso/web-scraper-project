@@ -1,9 +1,9 @@
 import { Router } from "express";
-import controller from "../middlewares/controller";
+import helpers from "../middlewares/character";
 
 const router = Router();
 
-router.get("/characters", controller.getAllCharacters);
-router.get("/characters/:id", controller.getCharacterById);
+router.get("/characters", helpers.getAllCharacters);
+router.get("/characters/:id", helpers.getCharacterById);
 
 export default router;
