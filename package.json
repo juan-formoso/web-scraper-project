@@ -1,5 +1,5 @@
 {
-  "name": "throne-of-glass-api-project",
+  "name": "web-scraper-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juan-formoso/throne-of-glass-api-project.git"
+    "url": "git+https://github.com/juan-formoso/web-scraper-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/juan-formoso/throne-of-glass-api-project/issues"
+    "url": "https://github.com/juan-formoso/web-scraper-project/issues"
   },
-  "homepage": "https://github.com/juan-formoso/throne-of-glass-api-project#readme",
+  "homepage": "https://github.com/juan-formoso/web-scraper-project#readme",
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/mysql": "^2.15.21",
