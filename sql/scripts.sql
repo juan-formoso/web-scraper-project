@@ -4,4 +4,4 @@ CREATE TABLE `Characters` (
   `image` VARCHAR(255) DEFAULT NULL,
   `species` VARCHAR(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-)
+);
