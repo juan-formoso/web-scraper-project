@@ -17,7 +17,11 @@ app.get("/api/characters", (req: Request, res: Response) => {
 
 app.get("/api/characters:id", (req: Request, res: Response) => {
   const id = req.params.id;
-  res.send(id + "Id is alive!");
+  const query = `SELECT * FROM Characters WHERE id = ${id}`;
+  connection.query(query, (err, rows) => {
+    if (err) throw err;
+    return res.send(rows);
+  });
 });
 
 const PORT = process.env.PORT || 5000;
