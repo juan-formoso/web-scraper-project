@@ -3,6 +3,10 @@ import mysql from "mysql";
 
 const app = express();
 
+const connectionString = process.env.DATABASE_URL || "";
+const connection = mysql.createConnection(connectionString);
+connection.connect();
+
 app.get("/api/characters", (req: Request, res: Response) => {
   res.send("It's alive!");
 });
