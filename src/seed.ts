@@ -1,13 +1,6 @@
 import axios from "axios";
 import cheerio from "cheerio";
-import mysql from "mysql";
-import dotenv from "dotenv";
-
-dotenv.config();
-
-const connectionString = process.env.DATABASE_URL || "";
-const connection = mysql.createConnection(connectionString);
-connection.connect();
+import connection from "./middlewares/connection";
 
 const characterNames = [
   "Abraxos",
