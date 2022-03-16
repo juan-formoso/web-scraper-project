@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/juan-formoso/throne-of-glass-api-project/issues"
   },
-  "homepage": "https://github.com/juan-formoso/throne-of-glass-api-project#readme"
+  "homepage": "https://github.com/juan-formoso/throne-of-glass-api-project#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
 }
