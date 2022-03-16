@@ -1,0 +1,7 @@
+CREATE TABLE `Characters` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(255) NOT NULL,
+  `image` VARCHAR(255) DEFAULT NULL,
+  `species` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
