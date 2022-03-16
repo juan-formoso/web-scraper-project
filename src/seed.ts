@@ -145,7 +145,6 @@ const loadCharacters = async () => {
     getCharacterInfo(characterName)
   );
   const characters = await Promise.all(characterInfoPromises);
-  // save them to the db
   console.log("Let's seed it");
   const values = characters.map((character, i) => [
     i,
